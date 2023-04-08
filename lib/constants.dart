@@ -1,11 +1,13 @@
+import 'package:dexider/utils/constants.dart';
+
 const welcomeText = 'Welcome Friend';
 
 const patternJson = {
   "name": "App Name",
   "colors": {
-    "primary": "#A4BC92",
-    "secondary": "#B3C99C",
-    "tertiary": "#C7E9B0"
+    "primary": genPrimaryColor,
+    "secondary": genSecondaryColor,
+    "tertiary": genTertiaryColor
   },
   "style": "classic",
   "sections": [
