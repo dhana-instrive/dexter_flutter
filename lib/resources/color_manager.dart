@@ -1,8 +1,13 @@
 import 'dart:math';
 
+import 'package:dexider/constants.dart';
 import 'package:flutter/material.dart';
 
+var data = patternJson;
+var colors = data["colors"] as Map;
 class ColorManager {
+
+
   static const textColor = Color(0xFF353535);
   static const textColorDark = Color(0xFF212121);
   static const textColorLight = Color(0xFFA6A6A6);
@@ -13,12 +18,13 @@ class ColorManager {
   static Color primaryLight = Color.fromARGB(255, 168, 198, 215);
   static Color primaryChatLight = Color(0xffE1F4FC); //B1E4F8
   static Color primaryChatLight2 = Color(0xffB1E4F8);
-  static Color primary = const Color(0xFF0275B1);
+  static Color primary =  Color(int.parse(colors["primary"].substring(1, 7), radix: 16) + 0xFF000000);
   static Color primaryL1 = const Color(0xFF0077B5);
   static Color primaryL2 = const Color(0xFF0E6795);
 
   static Color secondaryLight = Color.fromARGB(255, 230, 197, 149);
-  static Color secondary = const Color(0xFFED8F03);
+  static Color secondary = Color(int.parse(colors["secondary"].substring(1, 7), radix: 16) + 0xFF000000);
+  static Color tertiary = Color(int.parse(colors["tertiary"].substring(1, 7), radix: 16) + 0xFF000000);
   static Color secondaryL1 = const Color(0xFFFFB75E);
   static Color secondaryL2 = const Color(0xFFED8F03);
 
