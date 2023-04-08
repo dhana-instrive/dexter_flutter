@@ -1,3 +1,4 @@
+import 'package:dexider/sections/hero_banner.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -47,7 +48,10 @@ class RouteGenerator {
 
   Route<dynamic> getRoute() {
     switch (settings.name) {
-      
+      case Routes.splash:
+        return getTransistionPage(Scaffold(
+          body: HeroBanner(),
+        ));
       
       default:
         return unDefinedRoute();
