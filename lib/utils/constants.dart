@@ -1,1 +1,1 @@
-const welcomeText = 'Welcome Friend123'
+const welcomeText = 'Welcome Friend123';
