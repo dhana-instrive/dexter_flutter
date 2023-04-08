@@ -27,7 +27,7 @@ jobs:
         name: release-apk
         path: build/app/outputs/apk/release/app-release.apk
 
-  # deploy:
+  # deploy: 
   #   name: Deploy Android Build
   #   needs: build
   #   runs-on: ubuntu-latest
