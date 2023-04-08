@@ -3,7 +3,7 @@ name: Android
 on: 
   push:
       branches:
-        - master
+        - origin/dev-123
 jobs: 
   build-and-test: 
     runs-on: ubuntu-latest
