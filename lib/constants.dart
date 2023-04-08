@@ -1,0 +1,1 @@
+const welcomeText = 'Welcome Friend'
