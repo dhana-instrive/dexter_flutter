@@ -18,7 +18,7 @@ class App extends StatelessWidget {
   Widget getMaterialApp(
       {required String title, required BuildContext buildContext}) {
     return MaterialApp(
-      title: "TEst",
+      title: "Tested ",
       debugShowCheckedModeBanner: false,
       initialRoute: Routes.splash,
       onGenerateRoute: (settings) =>
