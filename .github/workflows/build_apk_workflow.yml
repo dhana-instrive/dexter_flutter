@@ -1,9 +1,6 @@
 name: Android 
 
-on: 
-  push:
-      branches:
-        - master
+on: push
 jobs: 
   build-and-test: 
     runs-on: ubuntu-latest
