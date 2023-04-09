@@ -2,7 +2,7 @@ name: Android
 
 on: 
   push:
-      branches: [ dev-123 ]
+      branches: [ 00e24cf0-d697-11ed-943a-2be9d1c59d7b ]
 jobs: 
   build-and-test: 
     runs-on: ubuntu-latest
@@ -25,22 +25,3 @@ jobs:
       with:
         name: release-apk
         path: build/app/outputs/apk/release/app-release.apk
-
-  # deploy: 
-  #   name: Deploy Android Build
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   - uses: actions/checkout@v1
-  #   - name: Get Android Build from artifacts
-  #     uses: actions/download-artifact@v2
-  #     with:
-  #       name: android-release
-  #   - name: Release Build to internal track
-  #     uses: r0adkll/upload-google-play@v1
-  #     with:
-  #       serviceAccountJsonPlainText: ${{ secrets.PLAYSTORE_ACCOUNT_KEY }}
-  #       packageName: com.example.ai_flutter_app
-  #       releaseFiles: app-release.aab
-  #       track: alpha
-  #       status: completed
