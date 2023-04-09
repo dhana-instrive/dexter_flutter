@@ -1,5 +1,22 @@
-const welcomeText = 'Welcome Friend123';
+const genPrimaryColor = "";
+const genSecondaryColor = "";
+const genTertiaryColor = "";
 
-const genPrimaryColor = "#A4BC92";
-const genSecondaryColor = "#B3C99C";
-const genTertiaryColor = "#C7E9B0";
+const navBarName = "";
+const navBarActions = [];
+const navBarLogo = "";
+
+const bannerTitle="";
+const bannerDesc="";
+const bannerBgImage="";
+const bannerButtontxt="";
+
+const aboutImage="";
+const aboutTitle="";
+const aboutTxt="";
+
+const testimonial=[];
+
+const footerCopyright="";
+const footerLink1="";
+const footerLink2="";
